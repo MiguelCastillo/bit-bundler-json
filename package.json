@@ -1,6 +1,6 @@
 {
   "name": "bit-bundler-json",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Bit bundler plugin for processing JSON assets",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MiguelCastillo/bit-bundler.git"
+    "url": "https://github.com/MiguelCastillo/bit-bundler-json.git"
   },
   "bugs": {
-    "url": "https://github.com/MiguelCastillo/bit-bundler/issues"
+    "url": "https://github.com/MiguelCastillo/bit-bundler-json/issues"
   },
-  "homepage": "https://github.com/MiguelCastillo/bit-bundler",
+  "homepage": "https://github.com/MiguelCastillo/bit-bundler-json",
   "dependencies": {
     "belty": "^0.3.0",
     "bit-bundler-utils": "^1.0.1"
