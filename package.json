@@ -1,25 +1,26 @@
 {
-  "name": "bit-bundler-json",
+  "name": "bit-loader-json",
   "version": "0.0.0",
-  "description": "Bit bundler plugin for processing JSON assets",
+  "description": "bit-loader plugin for JSON",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "bit-bundler",
-    "bit-bundler-loader-plugin"
+    "bit-loader",
+    "bit-loader-plugin"
   ],
   "author": "Miguel Castillo <manchagnu@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MiguelCastillo/bit-bundler-json.git"
+    "url": "https://github.com/MiguelCastillo/bit-loader-json.git"
   },
   "bugs": {
-    "url": "https://github.com/MiguelCastillo/bit-bundler-json/issues"
+    "url": "https://github.com/MiguelCastillo/bit-loader-json/issues"
   },
-  "homepage": "https://github.com/MiguelCastillo/bit-bundler-json",
+  "homepage": "https://github.com/MiguelCastillo/bit-loader-json",
   "dependencies": {
     "bit-plugin-builder": "^1.0.0"
   }
