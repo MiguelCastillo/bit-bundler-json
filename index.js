@@ -1,24 +1,21 @@
-var Plugin = require("bit-bundler-utils/plugin");
-var utils = require("belty");
+var PluginBuilder = require("bit-plugin-builder");
 
 var defaults = {
   match: {
     path: /[\w]+\.(json)$/
+  },
+  dependency: function textDependency(meta) {
+    return {
+      source: "module.exports = " + meta.source + ";"
+    };
   }
 };
 
-function dependencyText(meta) {
-  return {
-    source: "module.exports = " + meta.source + ";"
-  };
-}
-
 function textPlugin(options) {
-  var plugin = Plugin.create(utils.merge({}, defaults, options));
-
-  return Plugin.configure(plugin, {
-    dependency: dependencyText
-  });
+  return PluginBuilder
+    .create(defaults)
+    .configure(options)
+    .build();
 }
 
 module.exports = textPlugin;
