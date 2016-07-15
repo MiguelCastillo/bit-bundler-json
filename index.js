@@ -1,10 +1,8 @@
 var PluginBuilder = require("bit-plugin-builder");
 
 var defaults = {
-  match: {
-    path: /[\w]+\.(json)$/
-  },
-  dependency: function textDependency(meta) {
+  extensions: ["json"],
+  precompile: function textPrecompile(meta) {
     return {
       source: "module.exports = " + meta.source + ";"
     };
