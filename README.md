@@ -3,15 +3,27 @@
 
 The output of this plugin factory is a configuration Object that can be used as a [bit-loader](https://github.com/MiguelCastillo/bit-loader) plugin.
 
-### Example
+## Usage
 
-#### Simple plugin configuration
+### install
 
-``` javascript
-  var jsonPlugin = require("bit-loader-json");
-  var pluginConfig = jsonPlugin();
+```
+$ npm install bit-loader-json --save
 ```
 
-### License
+### bit-bundler setup
+
+``` javascript
+var Bitbundler = require("bit-bundler");
+var jsonPlugin = require("bit-loader-json");
+
+var bitbundler = new Bitbundler({
+  loader: {
+    plugins: jsonPlugin()
+  }
+});
+```
+
+## License
 
 Licensed under MIT
