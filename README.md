@@ -19,7 +19,9 @@ var jsonPlugin = require("bit-loader-json");
 
 var bitbundler = new Bitbundler({
   loader: {
-    plugins: jsonPlugin()
+    plugins: [
+      jsonPlugin()
+    ]
   }
 });
 ```
