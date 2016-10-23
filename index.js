@@ -2,7 +2,7 @@ var PluginBuilder = require("bit-plugin-builder");
 
 var defaults = {
   extensions: ["json"],
-  transform: function jsonTransform(meta) {
+  precompile: function jsonPrecompile(meta) {
     return {
       source: "module.exports = " + meta.source + ";"
     };
