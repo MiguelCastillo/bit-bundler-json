@@ -1,5 +1,3 @@
-var PluginBuilder = require("bit-plugin-builder");
-
 var defaults = {
   extensions: ["json"],
   precompile: function jsonPrecompile(meta) {
@@ -9,11 +7,14 @@ var defaults = {
   }
 };
 
-function textPlugin(options) {
-  return PluginBuilder
-    .create(defaults)
-    .configure(options)
-    .build();
+function buildPlugin(options, builder) {
+  return builder
+    .configure(defaults)
+    .configure(options);
 }
 
-module.exports = textPlugin;
+module.exports = function factory(options) {
+  return function(builder) {
+    return buildPlugin(options, builder);
+  };
+};
