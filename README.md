@@ -1,4 +1,6 @@
 # bit-loader-json
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MiguelCastillo/bit-loader-json.svg)](https://greenkeeper.io/)
 > bit-loader plugin for JSON
 
 The output of this plugin factory is a configuration Object that can be used as a [bit-loader](https://github.com/MiguelCastillo/bit-loader) plugin.
