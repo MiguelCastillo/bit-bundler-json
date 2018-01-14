@@ -1,6 +1,6 @@
 var defaults = {
   extensions: ["json"],
-  precompile: function jsonPrecompile(meta) {
+  postdependency: function jsonPrecompile(meta) {
     return {
       source: "module.exports = " + meta.source + ";"
     };
