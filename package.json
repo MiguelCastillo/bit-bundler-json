@@ -1,5 +1,5 @@
 {
-  "name": "bit-loader-json",
+  "name": "@bit/loader-json",
   "version": "1.2.0",
   "description": "bit-loader plugin for JSON",
   "main": "index.js",
