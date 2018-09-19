@@ -10,14 +10,14 @@ The output of this plugin factory is a configuration Object that can be used as 
 ### install
 
 ```
-$ npm install bit-loader-json --save
+$ npm install @bit/loader-json --save
 ```
 
 ### bit-bundler setup
 
 ``` javascript
-var Bitbundler = require("bit-bundler");
-var jsonPlugin = require("bit-loader-json");
+var Bitbundler = require("@bit/bundler");
+var jsonPlugin = require("@bit/loader-json");
 
 var bitbundler = new Bitbundler({
   loader: {
